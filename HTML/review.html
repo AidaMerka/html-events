@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceGala| Reviews</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/review.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Ace</span>Gala</a>
+        <ul class="navbar">
+            <li><a href="/HTML/index.html">Home</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <section class="section">
+        <h1>Event Organizing Business Reviews</h1>
+        <p>Please leave your review below:</p>
+    </section>
+
+    <div>
+        <form id="review-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="review">Review:</label>
+            <textarea id="review" name="review" required></textarea>
+
+            <button type="submit" id="submit-review">Submit</button>
+        </form>
+    </div>
+
+    <section id="reviews">
+        <h2>Customer Reviews:</h2>
+        <ul id="review-list"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AceGala. All rights reserved.</p>
+        <a href="#">Back to top</a>
+    </footer>
+
+    <script src="/JavaSCRIPT/review.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceGala | Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="/CSS/contact.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Ace</span>Gala</a>
+        <ul class="navbar">
+            <li><a href="/HTML/index.html">Home</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <h1>Contact Us</h1>
+    <form id="contact-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="number">Phone Number:</label>
+        <input type="tel" id="number" name="number" pattern="[0-9]{3}-[0-9]{7}" required placeholder="XXX-XXXXXXX">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="example@example.com">
+
+        <label for="confirm-email">Confirm Email:</label>
+        <input type="email" id="confirm-email" name="confirm-email" required placeholder="example@example.com">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="checkbox1">Subscribe to our Newsletter:</label>
+
+        <label>
+            <input type="checkbox" name="checkbox1" id="checkbox1" value="Yes!"> Yes!
+        </label>
+        <label>
+            <input type="checkbox" name="checkbox2" id="checkbox2" value="No!"> No!
+        </label>
+
+
+        <label for="radio">How did you hear about us?</label>
+        <div class="radio-buttons">
+            <label><input type="radio" name="radio" value="Social-media" id="radio">Social Media</label>
+            <label><input type="radio" name="radio" value="Friend">Friend</label>
+            <label><input type="radio" name="radio" value="Search-engine">Search Engine</label>
+        </div>
+
+        <label for="dropdown">Reason for Contact:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="question">Question</option>
+            <option value="feedback">Feedback</option>
+            <option value="support">Support</option>
+        </select>
+        <button type="submit" id="submit-button">Submit</button>
+
+
+    </form>
+
+    <div id="response"></div>
+    <footer>
+        <p>&copy; 2023 AceGala. All rights reserved.</p>
+        <a href="#">Back to top</a>
+    </footer>
+
+
+    <script src="/JavaSCRIPT/script.js"></script>
+</body>
+
+</html>

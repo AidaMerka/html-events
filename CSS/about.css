@@ -1,0 +1,210 @@
+@font-face {
+    font-family: DancingScript;
+    src: url(/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(52, 52, 52);
+    font-family: DancingScript;
+}
+html{scroll-behavior: smooth;}
+ .header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(15, 13, 13);
+    padding: 10px 40px;
+    margin: 0px;
+    position: sticky;
+    top:0;
+    left: 0;
+ }
+ .logo{
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    position: relative;
+    font-size: x-large;
+    font-weight: bolder;
+    background-color: rgb(15, 13, 13); 
+}
+.logo span{
+    color: aquamarine;
+    background-color: rgb(15, 13, 13); 
+}
+.navbar{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+} 
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+    background-color: rgb(15, 13, 13); 
+} 
+.navbar li a{
+    font-family: DancingScript;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: larger;
+    background-color: rgb(15, 13, 13); 
+}
+.navbar li a:hover,
+.navbar li a.active {
+    color: aquamarine;
+    transition: 0.3s ease;
+}
+.navbar li a.active::after,
+.navbar li a:hover::after{
+    content:"";
+    width: 30%;
+    height: 2px;
+    background: aquamarine;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.section{
+    width: 100%;
+    min-height: 130vh;
+    background-color: rgb(52, 52, 52);
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+.imageSection{
+    float: right;
+    width: 40%;
+}
+.imageSection img{
+    width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+.content-section .title h1{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: white;
+    font-family: DancingScript ;
+
+}
+.content-section .content h2{
+    margin-top: 20px;
+    color: white;
+    font-family: DancingScript ;
+
+}
+     .content-section .content p{
+        margin-top: 10px;
+        font-size: 17px;
+        line-height: 1.7;
+        color: white;
+        font-weight: bolder;
+        
+     }
+     .content-section .social p{
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+        font-family: DancingScript;
+        margin-top: 15px;
+     }
+     .content-section .social i{
+        font-size: 30px;
+        padding: 10px 10px;
+        color: white
+    }
+     .content-section .social i:hover{
+        color: aquamarine
+        
+     }
+
+    .cardsection{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card {
+        width: 300px;
+        height: 200px;
+        background-color:rgb(52, 52, 52);;
+        padding: 20px;
+        margin: 20px;
+        position: relative;
+        box-shadow: 15px 15px 34px rgb(92, 90, 92);
+        border-radius: 5%;
+      }
+      
+      .card h2 {
+        margin-top: 0;
+        color: white;
+        text-align: center;
+        padding-bottom: 8px;
+      }
+      
+      .card img {
+       width: 100%;
+       height:80%;
+      }
+      
+      .card-hover {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(92, 90, 92, 0.877);
+        padding: 20px;
+        opacity: 0;
+        transition: opacity 0.5s;
+        border-radius: 5%;
+        margin: 5px;
+        background-color: rgba(36, 38, 37, 0.216);
+        text-align: center;
+
+      }
+      .card-hover p{
+       color: white;
+       background:none;
+      }
+      
+      .card:hover .card-hover {
+        opacity: 1;
+      }
+      .top{
+        text-align: center;
+        margin: 20px;
+      }
+
+      footer {
+        background-color: #222;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    footer a{
+       color: white;
+       background: none;
+    }
+    footer p{
+       color: white;
+       background: none;
+    }
+    footer a:hover{
+       color: aquamarine;
+    }

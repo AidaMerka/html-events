@@ -1,0 +1,139 @@
+@font-face {
+    font-family: DancingScript;
+    src: url(/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+html{scroll-behavior: smooth;}
+body{
+	font-family: DancingScript;
+}
+.header{
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgb(15, 13, 13);
+   padding: 10px 40px;
+   margin: 0px;
+   position: sticky;
+   top:0;
+   left: 0;
+}
+.logo{
+   color: white;
+   text-decoration: none;
+   padding: 0 20px;
+   position: relative;
+   font-size: x-large;
+   font-weight: bolder;
+   background-color: rgb(15, 13, 13); 
+}
+.logo span{
+   color: aquamarine;
+   background-color: rgb(15, 13, 13); 
+}
+.navbar{
+   display: flex;
+   align-items: right;
+   justify-content: right;
+} 
+.navbar li{
+   list-style: none;
+   padding: 0 20px;
+   position: relative;
+   background-color: rgb(15, 13, 13); 
+} 
+.navbar li a{
+   font-family: DancingScript;
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: larger;
+   background-color: rgb(15, 13, 13); 
+}
+.navbar li a:hover,
+.navbar li a.active {
+   color: aquamarine;
+   transition: 0.3s ease;
+}
+.navbar li a.active::after,
+.navbar li a:hover::after{
+   content:"";
+   width: 30%;
+   height: 2px;
+   background: aquamarine;
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
+}
+h1{
+	text-align: center;
+}
+form {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+label {
+	display: block;
+	margin-top: 1rem;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+	display: block;
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 1rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-right: 0.5rem;
+}
+
+.radio-buttons label {
+	display: inline-block;
+	margin-right: 1rem;
+}
+button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding: 10px 20px;
+	margin-top: 10px;
+
+}
+
+button:hover {
+	opacity: 0.8;
+}
+#response {
+	margin: auto;
+	width: 40%;
+}
+footer {
+	background-color: #222;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+	margin-top: 40px;
+}
+footer a{
+   color: white;
+   background: none;
+}
+footer p{
+   color: white;
+   background: none;
+}
+footer a:hover{
+   color: aquamarine;
+}

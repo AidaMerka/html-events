@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AceGala | Punesim</title>
+    <link rel="stylesheet" href="/CSS/drag&drp.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Ace</span>Gala</a>
+        <ul class="navbar">
+            <li><a href="/HTML/index.html">Home</a></li>
+            <li><a href="/HTML/contact.html">Contact</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div id="hyrje">
+            <h1>WANT TO JOIN OUR STAFF?</h1>
+            <p> If you would like to join our staff please leave your resume here and we will get back at you as soon as
+                possible!</p>
+        </div>
+        <form id="upload">
+            <fieldset>
+                <legend>CV Upload</legend>
+                <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000">
+                <div>
+                    <label for="fileselect">Files to upload:</label>
+                    <input type="file" id="fileselect" name="fileselect[]" multiple="multiple">
+                    <div id="filedrag">or drop files here</div>
+                </div>
+            </fieldset>
+        </form>
+
+        <div id="messages">
+            <p></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 AceGala. All rights reserved.</p>
+        <a href="#">Back to top</a>
+    </footer>
+
+
+    <script src="/JavaSCRIPT/drag&drop.js"></script>
+</body>
+
+</html>

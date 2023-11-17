@@ -1,0 +1,157 @@
+@font-face {
+  font-family: DancingScript;
+  src: url(/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+}
+html{scroll-behavior: smooth;}
+body{
+	font-family: DancingScript;
+  background-color:rgb(52, 52, 52);
+  padding: 0;
+  margin: 0
+  
+  ;
+}
+.header{
+   position: fixed;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: rgb(15, 13, 13);
+   padding: 0px 20px;
+   margin: 0px;
+   position: sticky;
+   top:0;
+   left: 0;
+   z-index: 9999;
+}
+.logo{
+   color: white;
+   text-decoration: none;
+   padding: 0 20px;
+   position: relative;
+   font-size: x-large;
+   font-weight: bolder;
+   background-color: rgb(15, 13, 13); 
+}
+.logo span{
+   color: aquamarine;
+   background-color: rgb(15, 13, 13); 
+}
+.navbar{
+   display: flex;
+   align-items: right;
+   justify-content: right;
+} 
+.navbar li{
+   list-style: none;
+   padding: 0 20px;
+   position: relative;
+   margin: opx;
+   background-color: rgb(15, 13, 13); 
+} 
+.navbar li a{
+   font-family: DancingScript;
+   color: white;
+   text-decoration: none;
+   font-weight: 600;
+   font-size: larger;
+   background-color: rgb(15, 13, 13); 
+}
+.navbar li a:hover,
+.navbar li a.active {
+   color: aquamarine;
+   transition: 0.3s ease;
+}
+.navbar li a.active::after,
+.navbar li a:hover::after{
+   content:"";
+   width: 30%;
+   height: 2px;
+   background: aquamarine;
+   position: absolute;
+   bottom: -4px;
+   left: 20px;
+}
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: white;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  h3 {
+    margin-top: 0;
+    color: white;
+
+  }
+  
+  p {
+    line-height: 1.5;
+    color: white;
+  }
+  .polaroids-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+  }
+  
+  .polaroids-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .polaroid {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    overflow: hidden;
+  }
+  
+  .polaroid img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(-3deg) scale(1.1);
+  }
+  
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  footer a{
+     color: white;
+     background: none;
+  }
+  footer p{
+     color: white;
+     background: none;
+  }
+  footer a:hover{
+     color: aquamarine;
+  }
+  
